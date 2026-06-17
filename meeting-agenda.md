@@ -15,6 +15,9 @@
 | | | 2) Database and tech stack | Joshua will provide a database | Build Flask web app with filters, queries, Python data science tools | | |
 | | | 3) Email / legal compliance | Do NOT send actual emails — simulation only | Reach out to legal team re: spam policy and appropriate disclaimers for emails | | |
 | | | 4) Text dataset | Joshua recommendation | Pick text set | | |
+| 06/17/2026 | Merve, Taksh | 1) Lead sourcing strategy | Direct leads are preferred over partner leads — partners charge 2% fees | Prioritize direct targeting of business owners | | |
+| | | 2) Partner types | Mom and pop partners are the target partner profile | Get partner leads as secondary channel | | |
+| | | 3) Data partnership idea | Explore Dun & Bradstreet partnership — cross-reference their database with SBSS (Small Business Scoring Service) scores | Investigate whether D&B allows cross-referencing with SBSS scores | | |
 
 ---
 
@@ -63,3 +66,6 @@
 | Pick stack | Decide between Python, React, Node, Flask, PostgreSQL | | | | | | |
 | Set up Figma | Design dashboards and heatmap UI | | | | | | |
 | Explore paperless-ngx | Evaluate for document management in pipeline | | | | | | |
+| Prioritize direct leads | Direct targeting of business owners preferred over partner channel — partners charge 2% fees | | | | | | |
+| Get partner leads | Identify mom and pop partners as secondary lead channel | | | | | | |
+| D&B / SBSS cross-reference | Investigate Dun & Bradstreet partnership — can we cross-reference their database with SBSS scores? | | | | | | |
