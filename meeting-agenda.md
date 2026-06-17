@@ -41,3 +41,4 @@
 | Overall idea review | Assess if direction needs to change | | | | | | |
 | Meeting notes | Take and upload notes from 06/17 meeting with Joshua | | | | 06/17/2026 | | Add notes to this file under Meeting Notes |
 | Pick text set | Select the text dataset to use for the project | | | | | | |
+| GitHub Education | Look into GitHub Education benefits for interns — free Copilot, dev tools, Student Developer Pack | | | | | | |
