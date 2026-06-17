@@ -19,6 +19,9 @@
 | | | 2) Partner types | Mom and pop partners are the target partner profile | Get partner leads as secondary channel | | |
 | | | 3) Data partnership idea | Explore Dun & Bradstreet partnership — cross-reference their database with SBSS (Small Business Scoring Service) scores | Investigate whether D&B allows cross-referencing with SBSS scores | | |
 | | | 4) BSO partnership interest | Contact Merve if any BSO is interested in forming a partnership | Notify Merve if a BSO expresses interest in partnering | | |
+| 06/18/2026 | Harold, Taksh | 1) Scoring model — NAICS codes that perform better | | | Harold | |
+| | | 2) Overall idea / do we need to change direction? | | | James | |
+| | | **HARD DEADLINE** | Meeting with legal team is required — must be scheduled and completed ASAP (re: spam policy and email disclaimers) | Schedule and complete legal meeting | | |
 
 ---
 
