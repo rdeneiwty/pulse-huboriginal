@@ -74,3 +74,5 @@
 | Get partner leads | Identify mom and pop partners as secondary lead channel | | | | | | |
 | D&B / SBSS cross-reference | Investigate Dun & Bradstreet partnership — can we cross-reference their database with SBSS scores? | | | | | | |
 | Proposal ready | Complete and finalize the proposal | | High | In Progress | 06/18/2026 | | Hard deadline — due tomorrow |
+| Confirm Livesight licensing | Check if Livesight requires a paid license before building data pipeline around it | | | | | | |
+| Data strategy — pilot sources | Use SBA data + Livesight for pilot; Secretary of State registrations for founding date and entity type; web scraping reserved for Phase 2 | | | | | | |
