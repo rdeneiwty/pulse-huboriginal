@@ -1,16 +1,17 @@
 # Meeting Agenda
 
-**Date:**
+**Date:** 2026-06-17
 **Time:**
 **Location / Call Link:**
 **Facilitator:**
+**Note Taker:** Taksh
 
 ---
 
 ## Attendees
 
--
--
+- Joshua
+- Taksh
 -
 
 ---
