@@ -11,7 +11,7 @@
 | | | 3) Contact Joshua Lau about system design | Have a meeting with Josh | How will we pull data? General systems design | Josh | |
 | | | 4) BSO outreach | Rene will reach out to BSO to find conversion rate | Scoring model — is there a list of NAICS codes that perform better? | Harold | |
 | | | | | Overall idea / do we need to change? | James | |
-| 06/17/2026 | Joshua, Taksh | | | Take notes during meeting | Taksh | 06/17/2026 |
+| 06/17/2026 | Joshua, Taksh | 1) How will we pull data? General systems design | Need to look at pricing, legal data, and how to scrape it — this is the best approach | Review pricing data, legal data sources, and scraping strategy | Josh | |
 
 ---
 
