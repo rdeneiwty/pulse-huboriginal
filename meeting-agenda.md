@@ -14,6 +14,7 @@
 | 06/17/2026 | Joshua, Taksh | 1) How will we pull data? General systems design | Need to look at pricing, legal data, and how to scrape it — this is the best approach | Review pricing data, legal data sources, and scraping strategy | | |
 | | | 2) Database and tech stack | Joshua will provide a database | Build Flask web app with filters, queries, Python data science tools | | |
 | | | 3) Email / legal compliance | Do NOT send actual emails — simulation only | Reach out to legal team re: spam policy and appropriate disclaimers for emails | | |
+| | | 4) Text dataset | Joshua recommendation | Pick text set | | |
 
 ---
 
@@ -39,3 +40,4 @@
 | Scoring model | Identify NAICS codes that perform better | | | | | | |
 | Overall idea review | Assess if direction needs to change | | | | | | |
 | Meeting notes | Take and upload notes from 06/17 meeting with Joshua | | | | 06/17/2026 | | Add notes to this file under Meeting Notes |
+| Pick text set | Select the text dataset to use for the project | | | | | | |
