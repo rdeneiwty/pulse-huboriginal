@@ -1,151 +1,164 @@
-# PULSE — AI-Powered Lead Qualification & Capital Connection System
+# PULSE: AI-Driven Lead Qualification and Capital Connection System
 
-**NEWITY · Summer 2026 · Confidential Executive Proposal**
-
-*An automated engine that identifies pre-qualified small businesses nationwide before they search — and delivers them, clean and ready, into NEWITY's pipeline.*
-
-| 2x / week | $100K–$10M | 125K+ | 0 |
-|---|---|---|---|
-| Automated data refresh | Qualified revenue band | CRM loans training the model | Startups & trucking in pipeline |
+**NEWITY · Summer 2026**
+**Submitted by:** Anoushka Maller · Max Karolyi · Taksh Goel · Rene De Sola
 
 ---
 
-## Executive Summary
+## 1. Executive Summary
 
-NEWITY processes up to 10,000 applications a month, but a large share of that pipeline is wasted on businesses NEWITY cannot serve — primarily startups seeking loans NEWITY does not offer. At the same time, thousands of genuinely qualified businesses never reach NEWITY at all, because they are not actively searching and no competitor channel surfaces them.
+NEWITY's current lead pipeline depends on a referral and broker network that charges a percentage fee per lead, a cost that compounds at scale and limits margin on every deal closed through that channel. At the same time, thousands of small businesses that meet NEWITY's qualification criteria, operating for two or more years and generating over $100,000 in annual revenue and eligible for an SBA loan, are never reached because no direct outbound channel exists to find them.
 
-PULSE is a single automated system that solves both problems from the supply side. It pulls national business data on a recurring schedule, scores every business against NEWITY's own CRM history, and isolates only those that meet NEWITY's exact qualification criteria. **Every lead PULSE produces is qualified by design — no startup, no trucking operation, and no business outside the serviceable revenue band ever enters the pipeline.**
-
-The system runs in two branches. The primary branch finds qualified businesses in the data and routes them directly to NEWITY. The secondary branch uses the geographic pattern of those leads to activate Business Support Organizations (BSOs) that can surface the qualified businesses the data cannot see. One system, two complementary intake paths, built on three years of SBA-funded research that no competitor can replicate.
-
-**The ask:** Approval to deploy PULSE as a recurring automated pipeline during the Summer 2026 pilot, with the goal of permanent implementation — built and operated at under $200 in pilot cost, with zero new infrastructure.
+PULSE is a two-branch, AI-driven system that solves both problems. It identifies pre-qualified small businesses from national data before they search and delivers them directly into NEWITY's pipeline. Where direct data cannot reach, PULSE activates Business Support Organizations (BSOs) as referral partners, targeting only the geographic clusters where qualified businesses are most concentrated. The result is a self-improving lead engine that gets smarter with every outcome it processes.
 
 ---
 
-## 1. The Problem NEWITY Has Not Yet Solved
+## 2. Business Case
 
-NEWITY's qualified borrower has two hard requirements: **at least two years in operation and at least $100,000 in annual revenue.** Any business that fails either test is disqualified immediately. NEWITY's marketing team confirmed that the single largest source of pipeline waste is inbound demand from businesses seeking startup loans — a product NEWITY does not offer — because the channels that feed NEWITY today are demand-driven and do not filter for qualification before a business arrives.
+**Target Market**
 
-### Two Structural Gaps
+PULSE targets for-profit small businesses that meet all of the following:
+- In operation 2 or more years (4 or more years for construction businesses)
+- Annual revenue of $100,000 or more
+- Not classified under NAICS 484 (trucking)
+- Structured as a for-profit entity
 
-| Gap 1 — Unqualified Inbound | Gap 2 — Invisible Qualified Demand |
-|---|---|
-| Startups, trucking operations, and businesses outside the serviceable revenue band flood the funnel. They consume call-center time, pipeline capacity, and marketing spend, then disqualify. | Qualified businesses that have stopped searching — or never started — are invisible to search ads and SBA Lender Match. The Federal Reserve's 2026 survey found 32% of Black-owned firms that needed capital did not apply, citing discouragement, not disqualification. |
-| **PULSE answer:** filter on the supply side. Only businesses meeting every criterion are ever surfaced. | **PULSE answer:** find them in national data before they search, and use BSOs to reach the ones the data misses. |
+**How PULSE Generates Qualified Leads**
 
----
+- Branch A (Direct): Ingests national business data from the SBA database and Livesight, runs every business through two scoring layers, and surfaces only those that pass all qualification gates. Qualified businesses receive direct, AI-assisted outreach, with the highest-propensity leads contacted first.
+- Branch B (BSO Referral): Where Branch A identifies dense clusters of qualified businesses, PULSE activates the nearest BSOs as referral partners. These BSOs surface qualified businesses with no digital footprint that data alone cannot reach.
 
-## 2. How PULSE Works — One System, Two Branches
+**Business Value**
 
-PULSE is a scheduled automated job. On every data refresh (once or twice weekly, depending on source update frequency), it pulls the national business dataset, scores it against NEWITY's CRM model, and applies NEWITY's qualification rules. The output drives two independent branches.
+| Dimension | Impact |
+|-----------|--------|
+| Revenue | More qualified leads in the pipeline means more funded loans without increasing referral fee spend |
+| Efficiency | Every PULSE lead has already passed qualification gates, eliminating wasted time on ineligible businesses |
+| Scalability | The system runs on a recurring weekly schedule and produces leads automatically without additional headcount |
 
-### Branch A — Direct Lead Engine (primary)
-
-- **Pull:** On each refresh, PULSE ingests the national business dataset.
-- **Score in two stages:** every business passes through Scoring System 1 (eligibility gates — pass/fail) and then Scoring System 2 (a propensity score that ranks the survivors).
-- **Visualize:** A heatmap report shows the NEWITY team exactly where qualified businesses are concentrated — serving both as a lead dashboard and as the BSO targeting map for Branch B.
-- **Reach out:** Qualified businesses receive direct, automated outreach, highest-propensity first. Interested businesses self-select into NEWITY's standard 10-minute application.
-
-### Branch B — BSO Gap Network (secondary)
-
-Branch B exists for a single, well-defined purpose: to reach qualified businesses that are *not present in the national data* — the ones deepest in under-resourced communities with no digital footprint. It does not duplicate Branch A; it covers the gap Branch A cannot reach by design.
-
-The targeting logic is data-driven: where Branch A finds a dense cluster of qualified businesses, more qualified businesses very likely exist nearby that the data cannot see. PULSE identifies the BSOs closest to those high-density clusters and prioritizes them for partnership outreach, drawing on the QSII 209-organization BSO database built during the SBA research. Activated BSOs refer the invisible businesses directly into NEWITY's pipeline.
-
-**Why this branch matters most where approval is rarest.** Research feedback was direct: businesses in these communities are almost never approved for an SBA loan. That is not a disqualification problem — it is a discouragement-and-barrier problem. The Federal Reserve's 2026 survey shows the same pattern nationally: 32% of Black-owned firms that needed capital never applied, citing discouragement rather than ineligibility.
-
-Branch B applies the same eligibility gates as Branch A — no business is surfaced unless it qualifies — then reaches qualified owners through advisors they already trust and pairs them with NEWITY's 10-minute application.
-
-> **The two branches share one output.** The same heatmap that tells the NEWITY team where qualified leads are also tells us which BSOs to activate. The data deploys the human layer precisely where it adds the most value.
+**Key Assumptions**
+- SBA business data is publicly accessible and scrapable
+- Livesight data licensing is accessible within the project budget
+- NEWITY's CRM history can be used to train the propensity scoring model
+- Legal will confirm email outreach compliance upon deployment review
 
 ---
 
-## 3. The Two Scoring Systems
+## 3. Description of the Initiative
 
-### Scoring System 1 — Eligibility Gates (pass / fail)
+**What Is Being Built**
 
-A business must pass **all** of these gates to be surfaced as a qualified lead.
+PULSE has three components:
 
-| Gate | Rule | Signal / Field |
-|---|---|---|
-| Operating history | 2+ years in business. Construction businesses require 4+ years. | Registration / filing date; NAICS sector 23 flags the construction rule |
-| Revenue floor | $100,000+ in annual revenue. Hard cutoff — below this, excluded. | Revenue field / modeled estimate |
-| Revenue ceiling | Under $10,000,000 in annual revenue. Hard cutoff — above this, excluded. | Revenue field / modeled estimate |
-| Trucking exclusion | Trucking businesses excluded entirely. | NAICS 484 — excluded |
-| Entity type | For-profit businesses only. Nonprofits excluded. | Entity / organization type |
+**1. Data Pipeline**
+Automated ingestion of SBA business data and Livesight records, supplemented by Secretary of State registration data for founding date and entity type verification.
 
-*Result: a qualified lead is a for-profit business, 2+ years old (4+ for construction), earning between $100K and $10M annually, that is not in trucking.*
+**2. Two-Layer Scoring System**
 
-### Scoring System 2 — Propensity & Fit Score (ranking)
+Scoring System 1 (SBA Hard Gates, Pass/Fail): Every business must pass all eligibility criteria before advancing. Any business that fails a single gate is excluded entirely.
 
-- **Trained on outcomes NEWITY already owns.** The signals most associated with funded loans — rather than declined or incomplete ones — become the highest-weighted filters.
-- **Tuned to observed trends.** Industry mix, revenue range, business age, and geographic patterns that historically convert are weighted up; patterns that historically stall are weighted down.
-- **Output: a ranked list.** Every eligible business receives a fit score, so outreach and the NEWITY team always work the highest-propensity leads first.
+Scoring System 2 (NEWITY Propensity Model, Ranking): Trained on NEWITY's CRM history, this model scores businesses based on the likelihood of them not defaulting and their probability of converting into a funded loan. Each lead marked closed, not closed, and the reason why feeds back into the model, making it more accurate over time.
 
----
+**3. Flask Web Application**
+A dashboard giving the NEWITY team a ranked lead list, geographic heatmap, filtering tools, and Python-powered data science queries in one interface.
 
-## 4. Why This Cannot Be Copied
+**How Claude Is Used**
 
-PULSE's scoring model is trained on NEWITY's full CRM history — not only funded loans, but declined and incomplete applications. This three-class training set lets the model recognize a qualified profile across the full readiness spectrum. No competitor can build it, because no competitor has NEWITY's 125,000-loan history.
+Claude is embedded throughout PULSE:
+- Research and ideation: Analyzes data, identifies patterns, and refines scoring logic during the build phase
+- Outreach drafting: Drafts personalized outreach emails to qualified businesses. Every message is human-reviewed before sending.
+- Score explanation: Explains in plain language why a specific business scored the way it did
+- Data analysis: Surfaces patterns in the qualified lead pool and assists with interpreting results
 
-The BSO branch rests on three years and $625,000 of SBA-funded primary research (Grant #SBAHQ23I0138): a 209-organization BSO database with full contact and location data, a peer-reviewed manuscript under review at the Journal of Business Venturing Insights, and a documented understanding of why qualified businesses in specific community contexts never reach capital.
+**Why This Approach Over Alternatives**
 
----
-
-## 5. Implementation, Compliance & Approval
-
-### 10-Week Pilot Plan
-
-| Weeks | Activities & Deliverables |
-|---|---|
-| 1–2 | Approval secured. Data access confirmed. Scoring model specified against the three-class CRM history. Qualification rules implemented and tested on a Chicago sample. |
-| 3–4 | Branch A live: scoring job scheduled on the data refresh, qualified-lead output generated, heatmap report built. Automated outreach sequence drafted and human-reviewed. |
-| 5–6 | First qualified leads flow to NEWITY. Branch B activated: BSOs nearest the densest qualified clusters contacted. Weekly KPI reporting begins. |
-| 7–8 | Mid-point review with Uzziel Guzman. Model precision tuned on early results. Outreach and BSO targeting refined. Lead quality reviewed with the ops team. |
-| 9–10 | Final KPI dashboard and a real qualified-lead list generated during the pilot. Handoff package and scale roadmap delivered. CEO presentation with permanent-implementation recommendation. |
-
-### Compliance & Cost
-
-| | |
-|---|---|
-| **Data privacy** | All identity and financial data is collected exclusively within NEWITY's existing SBA-compliant application pipeline. No new data store is created. |
-| **AI governance** | Every outreach message is human-reviewed before sending. AI drafts and scores; a person approves. No autonomous deployment. |
-| **Infrastructure** | Runs on existing tools and SOC 2-compliant SaaS. No new servers, no proprietary code, no capital expenditure. Pilot cost under $200. |
-
-### Approval Request
-
-Approval of this proposal authorizes, effective on sign-off:
-- Deployment of the PULSE scoring job against the national business data and NEWITY CRM model.
-- Generation of the qualified-lead output and heatmap reporting for the NEWITY team.
-- Automated, human-reviewed outreach to qualified businesses (Branch A).
-- BSO partnership outreach targeted to qualified-lead clusters (Branch B).
-- Weekly KPI reporting to Uzziel Guzman beginning Week 5, leading to a Week 10 decision on permanent implementation.
+Buying a third-party lead list gives undifferentiated data any competitor can purchase. PULSE's scoring model is trained on NEWITY's own CRM, encompassing 125,000 or more loans spanning funded and declined applications. No competitor can replicate this. The referral and broker network currently feeding NEWITY's pipeline charges a percentage fee per lead. PULSE would ideally eliminate that referral fee on the leads it generates, improving overall margin, pending legal confirmation.
 
 ---
 
-## 6. Success Metrics — What Week 10 Will Prove
+## 4. Implementation Plan
 
-**Primary KPI:** a measurable increase in qualified businesses reaching NEWITY's application start versus the current channel baseline — counting only businesses that meet every qualification gate.
+*(Executive Approval Required)*
 
-| Metric | 10-Week Target | How Measured |
-|---|---|---|
-| Qualified businesses identified (Branch A) | 50–200 real leads | Scoring job output |
-| Qualified leads delivered to NEWITY pipeline | Track & report | Pipeline attribution |
-| Direct-outreach response / self-select rate | Report delta | Outreach tracking |
-| BSOs activated near qualified clusters (Branch B) | 8–12 partners | Partnership log |
-| NEWITY applications started | Track & report | Internal pipeline data |
-| Cost per qualified lead vs. current baseline | Report delta | Ops baseline data |
+| Phase | Weeks | Key Activities |
+|-------|-------|----------------|
+| Research and Proposal | 1-2 | Business case finalized, proposal submitted, executive approval secured |
+| Initial Implementation | 3-4 | Data pipeline built; Scoring System 1 implemented and tested; Flask app scaffolded; Figma designs started; IT tracking set up |
+| Optimization and Measurement | 5-8 | Scoring System 2 trained and deployed; Branch A outreach live (human-reviewed); Branch B BSO targeting activated; heatmap dashboard live; weekly KPI reporting; model refined on early results |
+| Final Presentation | 10 | Full KPI dashboard delivered; qualified lead list generated; scale roadmap and handoff package presented to executive team |
 
-### Three Proof Points for Permanent Implementation
-
-1. **A working output, not a concept.** A real list of qualified businesses — for-profit, 2+ years (4+ for construction), $100K–$10M, no trucking — generated by the system during the pilot.
-2. **Measurable lift.** Evidence that PULSE moves a higher share of qualified businesses to application start than business-as-usual, at a lower cost per qualified lead.
-3. **A hands-off path forward.** A scheduled job, a scored BSO targeting map, a reviewed outreach playbook, and a scale roadmap — everything needed for any NEWITY team member to run PULSE after summer.
+**Dependencies and Constraints**
+- IT to confirm database access and storage within NEWITY's existing systems
+- Livesight licensing confirmation before data pipeline build begins
+- Legal sign-off required before any outreach is deployed
+- Team roles (Anoushka Maller, Max Karolyi, Taksh Goel, Rene De Sola) to be assigned upon executive approval
 
 ---
 
-> PULSE turns NEWITY's unique assets — a 125,000-loan CRM and three years of SBA-funded research — into a recurring, self-running source of pre-qualified borrowers. It costs under $200 to pilot and is designed to run permanently after summer.
+## 5. Budget and Resources
+
+*Target spend: $1,500 with $500 held as contingency reserve*
+
+| Item | Purpose | Estimated Cost |
+|------|---------|----------------|
+| Livesight data access | Business data for scoring pipeline | TBD, licensing to be confirmed |
+| Figma | UI and dashboard design | ~$150 |
+| Cloud hosting | Flask app deployment | ~$100 |
+| SBA Small Business Search | Primary data source | Free |
+| GitHub Education | Free dev tools and Copilot for interns | Free (pending application) |
+| Flask and Python libraries | Backend framework and data science tools | Free (open source) |
+| Contingency reserve | Unexpected tool or data costs | $500 |
+| **Total** | | **~$1,500 + $500 reserve** |
+
+**Internal Support Required**
+- IT/Infrastructure: database provisioning, storage within NEWITY's existing environment
+- Legal team: email compliance review prior to outreach deployment
+- NEWITY operations: CRM data access for model training. We would also be working with Merve if we create a partnership with a BSO, community engagement center, or chamber of commerce.
 
 ---
 
-*Rene De Sola Zumarraga · NEWITY Finance & Data Analyst Intern, Summer 2026 · Lead Quantitative Researcher, Loyola QSII · SBA Grant #SBAHQ23I0138 · Supervisor: Uzziel Guzman*
+## 6. Security and Compliance Considerations
+
+*(Infrastructure and Compliance Approval Required)*
+
+**Data Involved**
+
+PULSE processes publicly available business data (SBA records, Secretary of State filings, Livesight) and NEWITY's internal CRM data for model training. No new personal financial data is collected outside of NEWITY's existing SBA-compliant application pipeline.
+
+**CAN-SPAM Compliance**
+
+All outreach emails will comply with CAN-SPAM requirements, including clear sender identification, physical address, and an unsubscribe mechanism in every message. No emails are sent autonomously; every message is human-reviewed and approved before delivery. During the pilot phase, no actual emails are sent. The system is built and validated in simulation mode first. Final legal sign-off will be obtained before any live outreach begins.
+
+**Data Storage and AI Governance**
+
+All data is stored within NEWITY's existing systems. No new servers or external databases are created. Claude drafts and scores; a person approves. No autonomous AI actions are taken without human review.
+
+---
+
+## 7. Success Metrics
+
+**KPIs**
+
+| Metric | Target by Week 10 |
+|--------|------------------|
+| Qualified businesses identified (Branch A) | 200+ qualified leads |
+| Qualified leads delivered to NEWITY pipeline | Track and report |
+| Direct outreach response rate | Report delta |
+| BSOs activated near qualified clusters (Branch B) | 8-12 partners |
+| NEWITY applications started from PULSE leads | Track and report |
+| Referral fee spend avoided | Report delta vs. broker channel |
+
+**Tracking Plan**
+
+PULSE is a new initiative. No existing program of this type exists in NEWITY's system. The team will work with IT to establish pipeline attribution tracking so leads generated through PULSE can be distinguished from those coming through the referral and broker network, making the cost-per-qualified-lead comparison measurable and auditable.
+
+**What Success Looks Like by End of Internship**
+
+1. A real, working list of qualified leads generated by the PULSE system during the pilot.
+2. A measurable lift in qualified applications at a lower effective cost per lead than the broker and referral channel.
+3. A fully operational system designed to run at least once a week, with a scored BSO targeting map, a human-reviewed outreach playbook, and a scale roadmap that any NEWITY team member can operate after summer.
+
+---
+
+*Anoushka Maller · Max Karolyi · Taksh Goel · Rene De Sola*
+*NEWITY Summer Internship 2026 · AI-Driven Lead Generation Initiative*
