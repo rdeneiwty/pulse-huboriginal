@@ -1,0 +1,471 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>PULSE Proposal – NEWITY Summer 2026</title>
+  <style>
+    @import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap');
+
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+
+    body {
+      font-family: 'Inter', 'Segoe UI', sans-serif;
+      font-size: 10.5pt;
+      color: #1a1a2e;
+      background: #f5f5f5;
+      line-height: 1.65;
+    }
+
+    .page {
+      width: 8.5in;
+      min-height: 11in;
+      margin: 0.4in auto;
+      background: #ffffff;
+      padding: 0.75in 0.85in;
+      box-shadow: 0 4px 24px rgba(0,0,0,0.10);
+    }
+
+    /* Cover / Header */
+    .cover {
+      border-bottom: 3px solid #1b3a6b;
+      padding-bottom: 28px;
+      margin-bottom: 32px;
+    }
+
+    .cover .logo-line {
+      font-size: 11pt;
+      font-weight: 600;
+      color: #1b3a6b;
+      letter-spacing: 0.08em;
+      text-transform: uppercase;
+      margin-bottom: 6px;
+    }
+
+    .cover h1 {
+      font-size: 22pt;
+      font-weight: 700;
+      color: #1b3a6b;
+      line-height: 1.2;
+      margin-bottom: 6px;
+    }
+
+    .cover .subtitle {
+      font-size: 12pt;
+      font-weight: 400;
+      color: #4a5568;
+      margin-bottom: 18px;
+    }
+
+    .cover-meta {
+      display: flex;
+      gap: 40px;
+      font-size: 9.5pt;
+      color: #4a5568;
+    }
+
+    .cover-meta .meta-block strong {
+      display: block;
+      font-weight: 600;
+      color: #1b3a6b;
+      font-size: 8pt;
+      text-transform: uppercase;
+      letter-spacing: 0.06em;
+      margin-bottom: 2px;
+    }
+
+    /* Section headers */
+    h2 {
+      font-size: 12pt;
+      font-weight: 700;
+      color: #1b3a6b;
+      text-transform: uppercase;
+      letter-spacing: 0.07em;
+      margin: 28px 0 10px 0;
+      padding-bottom: 5px;
+      border-bottom: 1.5px solid #e2e8f0;
+    }
+
+    h3 {
+      font-size: 10.5pt;
+      font-weight: 600;
+      color: #2d3748;
+      margin: 16px 0 6px 0;
+    }
+
+    p {
+      margin-bottom: 10px;
+      color: #2d3748;
+    }
+
+    ul {
+      margin: 6px 0 10px 18px;
+      color: #2d3748;
+    }
+
+    ul li {
+      margin-bottom: 4px;
+    }
+
+    /* Tables */
+    table {
+      width: 100%;
+      border-collapse: collapse;
+      margin: 12px 0 16px 0;
+      font-size: 9.5pt;
+    }
+
+    thead tr {
+      background: #1b3a6b;
+      color: #ffffff;
+    }
+
+    thead th {
+      padding: 8px 10px;
+      text-align: left;
+      font-weight: 600;
+      letter-spacing: 0.03em;
+    }
+
+    tbody tr:nth-child(even) {
+      background: #f7fafc;
+    }
+
+    tbody tr:nth-child(odd) {
+      background: #ffffff;
+    }
+
+    tbody td {
+      padding: 7px 10px;
+      border-bottom: 1px solid #e2e8f0;
+      color: #2d3748;
+      vertical-align: top;
+    }
+
+    tbody tr:last-child td {
+      border-bottom: none;
+      font-weight: 600;
+    }
+
+    /* Highlight box */
+    .highlight-box {
+      background: #ebf4ff;
+      border-left: 4px solid #1b3a6b;
+      padding: 12px 16px;
+      margin: 14px 0;
+      border-radius: 0 6px 6px 0;
+      font-size: 10pt;
+      color: #1b3a6b;
+    }
+
+    /* Branch cards */
+    .branch-grid {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 14px;
+      margin: 12px 0 16px 0;
+    }
+
+    .branch-card {
+      border: 1.5px solid #e2e8f0;
+      border-radius: 8px;
+      padding: 14px 16px;
+    }
+
+    .branch-card .branch-title {
+      font-size: 10pt;
+      font-weight: 700;
+      color: #1b3a6b;
+      margin-bottom: 6px;
+    }
+
+    .branch-card p {
+      font-size: 9.5pt;
+      margin-bottom: 0;
+      color: #4a5568;
+    }
+
+    /* Footer */
+    .footer {
+      margin-top: 40px;
+      padding-top: 14px;
+      border-top: 1.5px solid #e2e8f0;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      font-size: 8.5pt;
+      color: #718096;
+    }
+
+    .footer .names {
+      font-weight: 500;
+      color: #4a5568;
+    }
+
+    /* Section number badge */
+    .section-num {
+      display: inline-block;
+      background: #1b3a6b;
+      color: white;
+      font-size: 8pt;
+      font-weight: 700;
+      padding: 1px 7px;
+      border-radius: 10px;
+      margin-right: 8px;
+      vertical-align: middle;
+      letter-spacing: 0.04em;
+    }
+
+    /* Tag pill */
+    .tag {
+      display: inline-block;
+      background: #fff3cd;
+      color: #856404;
+      font-size: 8pt;
+      font-weight: 600;
+      padding: 2px 8px;
+      border-radius: 10px;
+      margin-left: 8px;
+      vertical-align: middle;
+    }
+
+    .tag.red {
+      background: #fde8e8;
+      color: #9b1c1c;
+    }
+
+    @media print {
+      body { background: white; }
+      .page { box-shadow: none; margin: 0; }
+    }
+  </style>
+</head>
+<body>
+
+<div class="page">
+
+  <!-- COVER HEADER -->
+  <div class="cover">
+    <div class="logo-line">NEWITY &nbsp;|&nbsp; Summer Internship 2026</div>
+    <h1>PULSE</h1>
+    <div class="subtitle">AI-Driven Lead Qualification &amp; Capital Connection System</div>
+    <div class="cover-meta">
+      <div class="meta-block">
+        <strong>Submitted by</strong>
+        Anoushka Maller &nbsp;·&nbsp; Max Karolyi &nbsp;·&nbsp; Taksh Goel &nbsp;·&nbsp; Rene De Sola
+      </div>
+      <div class="meta-block">
+        <strong>Program</strong>
+        AI-Driven Lead Generation Initiative &nbsp;·&nbsp; 10 Weeks
+      </div>
+      <div class="meta-block">
+        <strong>Date</strong>
+        June 2026
+      </div>
+    </div>
+  </div>
+
+  <!-- SECTION 1 -->
+  <h2><span class="section-num">1</span> Executive Summary</h2>
+  <p>
+    NEWITY's current lead pipeline depends on a referral and broker network that charges a percentage fee per lead, a cost that compounds at scale and limits margin on every deal closed through that channel. At the same time, thousands of small businesses that meet NEWITY's qualification criteria, operating for two or more years and generating over $100,000 in annual revenue and eligible for an SBA loan, are never reached because no direct outbound channel exists to find them.
+  </p>
+  <div class="highlight-box">
+    PULSE is a two-branch, AI-driven system that identifies pre-qualified small businesses from national data before they search and delivers them directly into NEWITY's pipeline. Where direct data cannot reach, PULSE activates Business Support Organizations (BSOs) as referral partners, targeting only the geographic clusters where qualified businesses are most concentrated. The result is a self-improving lead engine that gets smarter with every outcome it processes.
+  </div>
+
+  <!-- SECTION 2 -->
+  <h2><span class="section-num">2</span> Business Case</h2>
+
+  <h3>Target Market</h3>
+  <p>PULSE targets for-profit small businesses that meet all of the following criteria:</p>
+  <ul>
+    <li>In operation 2 or more years (4 or more years for construction businesses)</li>
+    <li>Annual revenue of $100,000 or more</li>
+    <li>Not classified under NAICS 484 (trucking)</li>
+    <li>Structured as a for-profit entity</li>
+  </ul>
+
+  <h3>How PULSE Generates Qualified Leads</h3>
+  <div class="branch-grid">
+    <div class="branch-card">
+      <div class="branch-title">Branch A &nbsp;—&nbsp; Direct</div>
+      <p>Ingests national business data from the SBA database and Livesight, runs every business through two scoring layers, and surfaces only those that pass all qualification gates. Qualified businesses receive direct, AI-assisted outreach with the highest-propensity leads contacted first.</p>
+    </div>
+    <div class="branch-card">
+      <div class="branch-title">Branch B &nbsp;—&nbsp; BSO Referral</div>
+      <p>Where Branch A identifies dense clusters of qualified businesses, PULSE activates the nearest BSOs as referral partners. These organizations surface qualified businesses with no digital footprint that data alone cannot reach.</p>
+    </div>
+  </div>
+
+  <h3>Business Value</h3>
+  <table>
+    <thead>
+      <tr><th>Dimension</th><th>Impact</th></tr>
+    </thead>
+    <tbody>
+      <tr><td><strong>Revenue</strong></td><td>More qualified leads in the pipeline means more funded loans without increasing referral fee spend</td></tr>
+      <tr><td><strong>Efficiency</strong></td><td>Every PULSE lead has already passed qualification gates, eliminating wasted time on ineligible businesses</td></tr>
+      <tr><td><strong>Scalability</strong></td><td>The system runs on a recurring weekly schedule and produces leads automatically without additional headcount</td></tr>
+    </tbody>
+  </table>
+
+  <h3>Key Assumptions</h3>
+  <ul>
+    <li>SBA business data is publicly accessible and scrapable</li>
+    <li>Livesight data licensing is accessible within the project budget</li>
+    <li>NEWITY's CRM history can be used to train the propensity scoring model</li>
+    <li>Legal will confirm email outreach compliance upon deployment review</li>
+  </ul>
+
+  <!-- SECTION 3 -->
+  <h2><span class="section-num">3</span> Description of the Initiative</h2>
+
+  <h3>What Is Being Built</h3>
+
+  <p><strong>1. Data Pipeline</strong><br/>
+  Automated ingestion of SBA business data and Livesight records, supplemented by Secretary of State registration data for founding date and entity type verification.</p>
+
+  <p><strong>2. Two-Layer Scoring System</strong><br/>
+  <em>Scoring System 1 (SBA Hard Gates, Pass/Fail):</em> Every business must pass all eligibility criteria before advancing. Any business that fails a single gate is excluded entirely.<br/><br/>
+  <em>Scoring System 2 (NEWITY Propensity Model, Ranking):</em> Trained on NEWITY's CRM history, this model scores businesses based on the likelihood of them not defaulting and their probability of converting into a funded loan. Each lead marked closed, not closed, and the reason why feeds back into the model, making it more accurate over time.</p>
+
+  <p><strong>3. Flask Web Application</strong><br/>
+  A dashboard giving the NEWITY team a ranked lead list, geographic heatmap, filtering tools, and Python-powered data science queries in one interface.</p>
+
+  <h3>How Claude Is Used</h3>
+  <ul>
+    <li><strong>Research and ideation:</strong> Analyzes data, identifies patterns, and refines scoring logic during the build phase</li>
+    <li><strong>Outreach drafting:</strong> Drafts personalized outreach emails to qualified businesses. Every message is human-reviewed before sending.</li>
+    <li><strong>Score explanation:</strong> Explains in plain language why a specific business scored the way it did</li>
+    <li><strong>Data analysis:</strong> Surfaces patterns in the qualified lead pool and assists with interpreting results</li>
+  </ul>
+
+  <h3>Why This Approach Over Alternatives</h3>
+  <p>
+    Buying a third-party lead list gives undifferentiated data any competitor can purchase. PULSE's scoring model is trained on NEWITY's own CRM, encompassing 125,000 or more loans spanning funded and declined applications. No competitor can replicate this. The referral and broker network currently feeding NEWITY's pipeline charges a percentage fee per lead. PULSE would ideally eliminate that referral fee on the leads it generates, improving overall margin, pending legal confirmation.
+  </p>
+
+  <!-- SECTION 4 -->
+  <h2><span class="section-num">4</span> Implementation Plan <span class="tag red">Executive Approval Required</span></h2>
+
+  <table>
+    <thead>
+      <tr><th>Phase</th><th>Weeks</th><th>Key Activities</th></tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><strong>Research and Proposal</strong></td>
+        <td>1–2</td>
+        <td>Business case finalized, proposal submitted, executive approval secured</td>
+      </tr>
+      <tr>
+        <td><strong>Initial Implementation</strong></td>
+        <td>3–4</td>
+        <td>Data pipeline built; Scoring System 1 implemented and tested; Flask app scaffolded; Figma designs started; IT tracking set up</td>
+      </tr>
+      <tr>
+        <td><strong>Optimization and Measurement</strong></td>
+        <td>5–8</td>
+        <td>Scoring System 2 trained and deployed; Branch A outreach live (human-reviewed); Branch B BSO targeting activated; heatmap dashboard live; weekly KPI reporting; model refined on early results</td>
+      </tr>
+      <tr>
+        <td><strong>Final Presentation</strong></td>
+        <td>10</td>
+        <td>Full KPI dashboard delivered; qualified lead list generated; scale roadmap and handoff package presented to executive team</td>
+      </tr>
+    </tbody>
+  </table>
+
+  <h3>Dependencies and Constraints</h3>
+  <ul>
+    <li>IT to confirm database access and storage within NEWITY's existing systems</li>
+    <li>Livesight licensing confirmation before data pipeline build begins</li>
+    <li>Legal sign-off required before any outreach is deployed</li>
+    <li>Team roles to be assigned upon executive approval</li>
+  </ul>
+
+  <!-- SECTION 5 -->
+  <h2><span class="section-num">5</span> Budget and Resources</h2>
+  <p><em>Target spend: $1,500 with $500 held as contingency reserve</em></p>
+
+  <table>
+    <thead>
+      <tr><th>Item</th><th>Purpose</th><th>Estimated Cost</th></tr>
+    </thead>
+    <tbody>
+      <tr><td>Livesight data access</td><td>Business data for scoring pipeline</td><td>TBD, licensing to be confirmed</td></tr>
+      <tr><td>Figma</td><td>UI and dashboard design</td><td>~$150</td></tr>
+      <tr><td>Cloud hosting</td><td>Flask app deployment</td><td>~$100</td></tr>
+      <tr><td>SBA Small Business Search</td><td>Primary data source</td><td>Free</td></tr>
+      <tr><td>GitHub Education</td><td>Free dev tools and Copilot for interns</td><td>Free (pending application)</td></tr>
+      <tr><td>Flask and Python libraries</td><td>Backend framework and data science tools</td><td>Free (open source)</td></tr>
+      <tr><td>Contingency reserve</td><td>Unexpected tool or data costs</td><td>$500</td></tr>
+      <tr><td><strong>Total</strong></td><td></td><td><strong>~$1,500 + $500 reserve</strong></td></tr>
+    </tbody>
+  </table>
+
+  <h3>Internal Support Required</h3>
+  <ul>
+    <li>IT/Infrastructure: database provisioning, storage within NEWITY's existing environment</li>
+    <li>Legal team: email compliance review prior to outreach deployment</li>
+    <li>NEWITY operations: CRM data access for model training. We would also be working with Merve if we create a partnership with a BSO, community engagement center, or chamber of commerce.</li>
+  </ul>
+
+  <!-- SECTION 6 -->
+  <h2><span class="section-num">6</span> Security and Compliance Considerations <span class="tag">Approval Required</span></h2>
+
+  <h3>Data Involved</h3>
+  <p>
+    PULSE processes publicly available business data (SBA records, Secretary of State filings, Livesight) and NEWITY's internal CRM data for model training. No new personal financial data is collected outside of NEWITY's existing SBA-compliant application pipeline.
+  </p>
+
+  <h3>CAN-SPAM Compliance</h3>
+  <p>
+    All outreach emails will comply with CAN-SPAM requirements, including clear sender identification, physical address, and an unsubscribe mechanism in every message. No emails are sent autonomously; every message is human-reviewed and approved before delivery. During the pilot phase, no actual emails are sent. The system is built and validated in simulation mode first. Final legal sign-off will be obtained before any live outreach begins.
+  </p>
+
+  <h3>Data Storage and AI Governance</h3>
+  <p>
+    All data is stored within NEWITY's existing systems. No new servers or external databases are created. Claude drafts and scores; a person approves. No autonomous AI actions are taken without human review.
+  </p>
+
+  <!-- SECTION 7 -->
+  <h2><span class="section-num">7</span> Success Metrics</h2>
+
+  <table>
+    <thead>
+      <tr><th>Metric</th><th>Target by Week 10</th></tr>
+    </thead>
+    <tbody>
+      <tr><td>Qualified businesses identified (Branch A)</td><td>200+ qualified leads</td></tr>
+      <tr><td>Qualified leads delivered to NEWITY pipeline</td><td>Track and report</td></tr>
+      <tr><td>Direct outreach response rate</td><td>Report delta</td></tr>
+      <tr><td>BSOs activated near qualified clusters (Branch B)</td><td>8–12 partners</td></tr>
+      <tr><td>NEWITY applications started from PULSE leads</td><td>Track and report</td></tr>
+      <tr><td>Referral fee spend avoided</td><td>Report delta vs. broker channel</td></tr>
+    </tbody>
+  </table>
+
+  <h3>Tracking Plan</h3>
+  <p>
+    PULSE is a new initiative. No existing program of this type exists in NEWITY's system. The team will work with IT to establish pipeline attribution tracking so leads generated through PULSE can be distinguished from those coming through the referral and broker network, making the cost-per-qualified-lead comparison measurable and auditable.
+  </p>
+
+  <h3>What Success Looks Like by End of Internship</h3>
+  <ul>
+    <li>A real, working list of qualified leads generated by the PULSE system during the pilot.</li>
+    <li>A measurable lift in qualified applications at a lower effective cost per lead than the broker and referral channel.</li>
+    <li>A fully operational system designed to run at least once a week, with a scored BSO targeting map, a human-reviewed outreach playbook, and a scale roadmap that any NEWITY team member can operate after summer.</li>
+  </ul>
+
+  <!-- FOOTER -->
+  <div class="footer">
+    <div class="names">Anoushka Maller &nbsp;·&nbsp; Max Karolyi &nbsp;·&nbsp; Taksh Goel &nbsp;·&nbsp; Rene De Sola</div>
+    <div>NEWITY Summer Internship 2026</div>
+  </div>
+
+</div>
+
+</body>
+</html>
