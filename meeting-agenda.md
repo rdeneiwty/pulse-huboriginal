@@ -18,6 +18,20 @@
 
 ---
 
+## Resources from 06/17 Meeting (Joshua)
+
+| Resource | Link | Notes |
+|---|---|---|
+| SBA Small Business Search | https://search.certifications.sba.gov | Find small businesses seeking federal contracts — key data source for PULSE |
+| CAN-SPAM Act Compliance Guide | https://www.ftc.gov/business-guidance/resources/can-spam-act-compliance-guide-business | Legal requirements for commercial email outreach — do NOT send actual emails; simulation only |
+| Figma Pricing | https://www.figma.com/pricing/ | For UI/dashboard design work |
+| GitHub Student Pack | https://education.github.com/pack | Free dev tools — claim if eligible |
+| Flask Tutorial (GeeksforGeeks) | https://www.geeksforgeeks.org/flask-tutorial/ | Backend framework reference |
+| Django Tutorial (W3Schools) | https://www.w3schools.com/django/index.php | Alternative backend framework reference |
+| Awesome Python Models | https://github.com/grundic/awesome-python-models | Curated list of Python libraries for models, schemas, ORMs — useful for scoring system |
+
+---
+
 ## Weekly Plan
 
 | Dates | Goals | Planned Tasks | Completed | Blockers | Notes |
@@ -39,9 +53,13 @@
 | BSO outreach | Contact BSO to find conversion rate | | | | | | |
 | Scoring model | Identify NAICS codes that perform better | | | | | | |
 | Overall idea review | Assess if direction needs to change | | | | | | |
-| Meeting notes | Take and upload notes from 06/17 meeting with Joshua | | | | 06/17/2026 | | Add notes to this file under Meeting Notes |
+| Meeting notes | Take and upload notes from 06/17 meeting with Joshua | Taksh | | | 06/17/2026 | | Added to this file |
 | Pick text set | Select the text dataset to use for the project | | | | | | |
+| Scrape Livesight database | Pull business data from Livesight for scoring pipeline | | | | | | |
 | GitHub Education | Look into GitHub Education benefits for interns — free Copilot, dev tools, Student Developer Pack | | | | | | |
 | Security first | Security must be prioritized from the beginning of development | | | | | | |
 | Web design from the start | Web design should be incorporated from day one, not added later | | | | | | |
-| Model self-learning | The model needs to be learning from itself | | | | | | |
+| Model self-learning | Mark each lead as closed, not closed, and reason why — feed outcomes back into Scoring System 2 so it keeps learning | | | | | | |
+| Pick stack | Decide between Python, React, Node, Flask, PostgreSQL | | | | | | |
+| Set up Figma | Design dashboards and heatmap UI | | | | | | |
+| Explore paperless-ngx | Evaluate for document management in pipeline | | | | | | |
